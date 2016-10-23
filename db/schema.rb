@@ -13,6 +13,14 @@
 ActiveRecord::Schema.define(version: 20161023143750) do
 
   create_table "products", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.decimal  "price"
+    t.decimal  "size"
+    t.boolean  "is_spicy"
+    t.boolean  "is_veg"
+    t.boolean  "is_best_offer"
+    t.string   "path_to_image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
