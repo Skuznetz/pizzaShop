@@ -11,7 +11,7 @@ function something()
 	alert(x);
 	
 }
-function add_to_card()
+function add_to_cart(id)
 {
-	alert('hello')
+	alert('You added pizza with id:' + id);
 }
