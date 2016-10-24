@@ -2,13 +2,13 @@ class AddProducts < ActiveRecord::Migration
   def change
 
   	Product.create ({
-    :title => 'ipizza1', 
+    :title => 'pizza1', 
     :description => 'pizza', 
     :price => 350, :size =>30, 
     :is_spicy => false, 
     :is_veg => false, 
     :is_best_offer => false,
-     :path_to_image => '/image/ ipizza1.jpg'
+     :path_to_image => 'image/pizza1.jpg'
       })
      Product.create  ({
      :title => 'pizza2', 
