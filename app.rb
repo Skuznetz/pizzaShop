@@ -17,6 +17,12 @@ end
 
 get '/about' do 
 	erb :about   
+
+post '/place_order'do
+
+@order = Order.create params[:order]
+erb "Спасибо,ваш заказ был размещен"
+
 end
 
 post '/cart' do
