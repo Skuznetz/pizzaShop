@@ -9,6 +9,9 @@ set :database, "sqlite3:pizzashop.db"
 class Product < ActiveRecord::Base
 end
 
+class Order <ActiveRecord::Base
+end
+
 
 get '/' do
 	@products = Product.all   
@@ -16,12 +19,13 @@ get '/' do
 end
 
 get '/about' do 
-	erb :about   
+	erb :about 
+end  
 
-post '/place_order'do
+post '/place_order' do
 
-@order = Order.create params[:order]
-erb "Спасибо,ваш заказ был размещен"
+ @order = Order.create params[:order]
+erb :order_placed
 
 end
 
