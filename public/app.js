@@ -18,7 +18,7 @@ var key = 'product_ ' + id;
 
 var x = window.localStorage.getItem(key);
 x = x *1 + 1;
-w.localStwindoorage.setItem(key,x);
+window.LocalStorage.setItem(key,x);
 
 update_orders_input();
 update_orders_button();
@@ -70,8 +70,8 @@ orders = orders + key + '=' + value+ ',';
 return orders;
 }
 
-// function cansel_order()
-// {
-// alert('aaa');
-// return false;	
-// }
+function cansel_order()
+{
+alert('aaa');
+return false;	
+}
