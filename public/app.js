@@ -70,8 +70,8 @@ orders = orders + key + '=' + value+ ',';
 return orders;
 }
 
-function cansel_order()
-{
-alert('aaa');
-return false;	
-}
+// function cansel_order()
+// {
+// alert('aaa');
+// return false;	
+// }
