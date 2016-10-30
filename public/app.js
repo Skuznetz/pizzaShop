@@ -73,10 +73,10 @@ return orders;
 function cancel_order()
 {
  window.localStorage.clear();
-// alert('aaa');
+
 	update_orders_input();
 	 update_orders_button();
-	  
+	 $("#cart").text('Начните с начала');  
 
 return false;	
 }
